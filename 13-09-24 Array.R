@@ -1,0 +1,49 @@
+survey_response=c('g','b','a','g','g','a','a','b','b','g')
+survey_response 
+survey_factor=factor(survey_response,levels=c("g","a","b"),labels=c("Good","Average","Bad"),ordered = TRUE)
+survey_factor
+#Array 
+?array
+a1=array(c(1,2,3,4,5,6,7,9,9,8,9,10))
+a1
+length(a1)
+a2=array(seq(a1))
+a2
+a3=array(seq(1,100))
+a3
+# Multi-dimensional array
+a4=array(seq(1,9),dim=c(2,2))
+a4
+a41=array(seq(1,9),dim=c(2,3))
+a41
+a5=array(seq(1,9),dim=c(3,3))
+a5
+#checking array argument
+vec1=c(1,2,3,4,5,6,7,8,9)
+vec2=c(3,4,2)
+array(vec1,vec2)
+arr=array(c(vec1,vec2),dim=c(2,3,4))
+arr
+dim(arr)
+row_names=c("r1","r2")
+colum_names=c("c1","c2","c3")
+mat_names=c("mat1","mat2")
+arr1=array(c(vec1,vec2),dim=c(2,3,2),dimnames=list(row_names,colum_names,mat_names))
+arr1           
+arr1[2,3,1]
+#Appending the values in a particular array
+?append
+arr2=array(c(1,2,3,4,5,6,7,8,9))
+arr2
+arr3=append(arr2,10,4)
+arr3
+#OR
+append(arr2,21)
+arr4=append(arr2,10,after=length(8))
+arr4
+arr2[3]
+arr10=array(c(2,3,4,5))
+arr10[arr10%%2==0]
+arr
+arr10[-2]
+arr10[arr10!=2]
