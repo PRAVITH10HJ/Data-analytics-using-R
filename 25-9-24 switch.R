@@ -22,14 +22,14 @@ print(result)
 }
 #number to day type 2
 {
-  day=as.integer(readline("ente the number for the day"))
+  day=readline("ente the number for the day")
   switch(day,
-         "sunday",
-         "mon",
-         "tues",
-         "wed",
-         "thur",
-         "fri",
-         "sat",
-         "invaild")
+        "1"="sunday",
+        "2"="mon",
+        "3"="tues",
+        "4"="wed",
+        "5"="thur",
+        "6"="fri",
+        "7"="sat",
+        "invaild")
 }
