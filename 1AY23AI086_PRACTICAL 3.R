@@ -1,0 +1,16 @@
+m1=matrix(c(seq(1,9)),3,3)
+m2=matrix(c(seq(10,18)),3,3)
+m1
+m2
+#a
+t(m1)
+t(m2)
+#b
+su=m1+m2
+su
+#c
+di=m1-m2
+di
+#d
+m=m1*m2
+m
